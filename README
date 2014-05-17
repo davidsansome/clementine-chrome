@@ -1,0 +1,9 @@
+Compiling taglib:
+  cd bin
+  cmake .. \
+    -DCMAKE_TOOLCHAIN_FILE=~/src/clementine-chrome/LinuxPNaCL.cmake \
+    -DCMAKE_PREFIX_PATH=${NACL_SDK_ROOT}/toolchain/linux_pnacl/usr \
+    -DCMAKE_BUILD_TYPE=Debug \
+    -DENABLE_STATIC=On \
+    -DCMAKE_INSTALL_PREFIX=${NACL_SDK_ROOT}/ports/ \
+    -DLIB_SUFFIX=/newlib_pnacl/Debug/
